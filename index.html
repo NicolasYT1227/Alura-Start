@@ -77,6 +77,7 @@
         .alunos {
             list-style: none;
             display: flex;
+            justify-content: space-around;
         }
 
         .alunos-imagens {
@@ -85,6 +86,23 @@
 
         .nav-desc {
             background-color: gray;
+        }
+
+        .professores-desc {
+            list-style: none;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .professores-desc:hover {
+            cursor: pointer;
+            background: gray;
+        }
+
+        .professores-imagens {
+            width: 18%;
         }
 
     </style>
@@ -97,7 +115,7 @@
             <nav class="direction-top">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="descricao-escola.html">Descrição do Colégio</a></li>
+                    <li><a href="descricao_escola.html">Descrição do Colégio</a></li>
                 </ul>
             </nav>
         </div>
@@ -108,18 +126,15 @@
                 <ul class="alunos">
                     <li>
                         <img class="alunos-imagens" src="alunos.jpeg">
-                        <p><a href="alunos-colegio.html" class="btn">Alunos do Colégio</a></p>
+                        <p><a href="alunos_colegio.html" class="btn">Alunos do Colégio</a></p>
                     </li>
-                </ul>      
-            </div>
-            <div class="box-text">
-
+                    <li>
+                        <img class="professores-imagens" src="professores.jpeg">
+                        <p><a href="professores.html" class="professores-desc">Professores</a></p>
+                    </li>
+                </ul>    
             </div>
         </div>
-
-       
-
-    </div>
 
     <script src="js/principal.js" defer></script>
 </body>
